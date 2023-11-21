@@ -1,6 +1,7 @@
 #define MAX_OLEN 8
 #define MAX_OPTAB (sizeof(OPTAB) / sizeof(struct optab))
-
+#ifndef optab_H
+#define optab_H
 typedef struct optab {
     char mnemonic[MAX_OLEN];
     unsigned char opcode;
@@ -9,3 +10,4 @@ typedef struct optab {
 
 extern Optab OPTAB[];
 extern Optab* see_OPTAB(char* opc);
+#endif

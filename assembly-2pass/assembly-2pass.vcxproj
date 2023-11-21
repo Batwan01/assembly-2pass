@@ -20,22 +20,37 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="asc2int.c" />
+    <ClCompile Include="asm_drctv.c" />
     <ClCompile Include="asm_mnmo.c" />
-    <ClCompile Include="asm_space.c" />
+    <ClCompile Include="asm_space.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="cal_drctv.c" />
     <ClCompile Include="cal_expr.c" />
-    <ClCompile Include="cal_mnmo.c" />
+    <ClCompile Include="cal_mnmo.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="cal_term.c" />
     <ClCompile Include="dctab.c" />
-    <ClCompile Include="main.c" />
+    <ClCompile Include="len_drctv.c" />
+    <ClCompile Include="len_drvtv_num.c" />
+    <ClCompile Include="len_drvtv_str.c" />
+    <ClCompile Include="len_mnmo.c" />
+    <ClCompile Include="main_pass1.c" />
     <ClCompile Include="optab.c" />
+    <ClCompile Include="pass2.c" />
     <ClCompile Include="put_list.c" />
     <ClCompile Include="rdline.c" />
     <ClCompile Include="str2int.c" />
     <ClCompile Include="symtab.c" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Makefile.mk" />
+    <None Include="Makefile.mk">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="asm.h" />

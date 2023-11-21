@@ -21,7 +21,7 @@
     <ClCompile Include="cal_term.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main.c">
+    <ClCompile Include="main_pass1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="cal_expr.c">
@@ -55,6 +55,24 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="cal_drctv.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="len_mnmo.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="len_drctv.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="len_drvtv_str.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="len_drvtv_num.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pass2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="asm_drctv.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

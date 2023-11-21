@@ -2,14 +2,15 @@
 #include <stdio.h>
 #include "optab.h"
 #include "oprand.h"
-//#include "asm.h"
+
 
 int asm_mnemonic(Optab* op) {
     char* obp = OBJC;
     unsigned int obc; //4byte
     obc = (op->opcode << 24);
     if (op->n_operand) {
-        if (!OPerand) fprintf(stderr, "%s --> Operand is not defined ...\n", LBUF), exit(10);
+        if (!OPerand) fprintf(stderr, "%s --> Operand is not defined ...\n", LBUF), 
+            (10);
         if (!strcmp(op->mnemonic, "DMPR")) obc |= cal_nm_dmpr(OPerand);
         else obc |= cal_nm_oprnd(OPerand);
     }
