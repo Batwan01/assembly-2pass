@@ -19,7 +19,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="d.cpp" />
+    <ClCompile Include="asc2int.c" />
+    <ClCompile Include="asm_mnmo.c" />
+    <ClCompile Include="asm_space.c" />
+    <ClCompile Include="cal_drctv.c" />
+    <ClCompile Include="cal_expr.c" />
+    <ClCompile Include="cal_mnmo.c" />
+    <ClCompile Include="cal_term.c" />
+    <ClCompile Include="dctab.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="optab.c" />
+    <ClCompile Include="put_list.c" />
+    <ClCompile Include="rdline.c" />
+    <ClCompile Include="str2int.c" />
+    <ClCompile Include="symtab.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asm.h" />
+    <ClInclude Include="dctab.h" />
+    <ClInclude Include="oprand.h" />
+    <ClInclude Include="optab.h" />
+    <ClInclude Include="symtab.h" />
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -77,7 +101,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions) _CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -105,7 +129,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions) _CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
