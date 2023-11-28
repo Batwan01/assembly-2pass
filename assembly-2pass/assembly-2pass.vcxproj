@@ -34,6 +34,7 @@
     </ClCompile>
     <ClCompile Include="cal_term.c" />
     <ClCompile Include="dctab.c" />
+    <ClCompile Include="ftab.c" />
     <ClCompile Include="len_drctv.c" />
     <ClCompile Include="len_drvtv_num.c" />
     <ClCompile Include="len_drvtv_str.c" />

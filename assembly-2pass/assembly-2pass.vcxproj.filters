@@ -75,6 +75,9 @@
     <ClCompile Include="asm_drctv.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ftab.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile.mk" />

@@ -12,7 +12,7 @@ int cnv_one_term(char* term)    // ex) cal_one_term("BUF")
             fprintf(stderr, "%s ->> Operand number '%s' is not valid...\n", LBUF, term), exit(11);
 
     }
-    else if (term[0] == '\"') {
+    else if (term[0] == '\'') {
         if ((val = asc2int(term)) == INV_VAL)
             fprintf(stderr, "%s --> Operand number '%s' is not valid...\n", LBUF, term), exit(11);
     }
